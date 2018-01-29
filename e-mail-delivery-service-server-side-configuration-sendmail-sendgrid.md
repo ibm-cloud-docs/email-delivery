@@ -12,7 +12,7 @@ lastupdated: "2017-11-21"
 ## Overview
 
 Use this procedure to configure your server to use the {{site.data.keyword.cloud}} email delivery service 
-with Sendmail. The example below was performed on a bare install of Centos 6.5 and Ubuntu 14.
+with Sendmail. The example below was performed on a bare metal install of Centos 6.5 and Ubuntu 14.
 
 ## Pre-Configuration
 
