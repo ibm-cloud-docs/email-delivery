@@ -35,7 +35,7 @@ For Ubuntu/Debian, run this command:
 3. Edit the /etc/mail/sendmail.mc file to use {{site.data.keyword.SendGrid}} as our smart host.
 
 ### Configure sendmail.mc in RHEL/Centos
-1. Locate and open the in the sendmail.mc file.
+1. Locate and open the sendmail.mc file.
 2. Comment out the following line: 
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
 3. Also to the sendmail.mc file, and add new lines with the following code:
