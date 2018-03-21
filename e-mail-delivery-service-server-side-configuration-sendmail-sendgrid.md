@@ -36,14 +36,14 @@ For Ubuntu/Debian, run this command:
 1. Locate and open the sendmail.mc file.
 2. Comment out the following line: 
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
-3. Also to the sendmail.mc file, and add new lines with the following code:
+3. Add new lines with the following code:
 `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
 `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
 
 ### Configure sendmail.mc in Ubuntu/Debian
-1. Locate and open the in the sendmail.mc file.
+1. Locate and open the sendmail.mc file.
 2. At the bottom of the file, place the following code above the line that reads 'MAILER_DEFINITIONS'
 `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
