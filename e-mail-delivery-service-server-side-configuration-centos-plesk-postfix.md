@@ -1,17 +1,15 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# E-mail delivery service server-side configuration: CentOS, Plesk, and Postfix
+# Email delivery service server-side configuration: CentOS, Plesk, and Postfix
 
-## Overview
-
-Here are steps to configure your server to use {{site.data.keyword.SendGrid}}, the {{site.data.keyword.cloud}} email delivery service as a smart host. The example below was performed with a standard {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 with Plesk 12 and Postfix.
+Follow these steps to configure your server to use {{site.data.keyword.SendGrid}}, the {{site.data.keyword.cloud}} email delivery service as a smart host. The example below was performed with a standard {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 with Plesk 12 and Postfix.
 
 ## Configuration
 
@@ -31,7 +29,7 @@ Here are steps to configure your server to use {{site.data.keyword.SendGrid}}, t
   `relayhost = [smtp.sendgrid.net]:587`
 
 3.  Save and close the /etc/postfix/main.cf file.
-4.  Restart postfix using this command:
+4.  Restart Postfix using this command:
 
   `/etc/init.d/postfix restart`
 
@@ -47,6 +45,6 @@ Here are steps to configure your server to use {{site.data.keyword.SendGrid}}, t
 
     /etc/init.d/postfix restart
 
-2.  If port 587 does not work, use port 2525 in the postfix configuration. You may also need to open the configuraiton file /etc/postfix/main.cf  and uncomment the following line:
+2.  If port 587 does not work, use port 2525 in the Postfix configuration. You might also need to open the configuration file /etc/postfix/main.cf  and uncomment the following line:
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`
