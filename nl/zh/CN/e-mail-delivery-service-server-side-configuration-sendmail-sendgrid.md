@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,9 +9,7 @@ lastupdated: "2017-11-21"
 
 # 电子邮件传递服务服务器端配置：Sendmail、SendGrid
 
-## 概述
-
-使用此过程来配置服务器，配置后即可使用 {{site.data.keyword.cloud}} 电子邮件传递服务以及 Sendmail。下面的示例是在 Centos 6.5 和 Ubuntu 14 的裸机安装上执行的。
+完成以下步骤以将服务器配置为结合使用 {{site.data.keyword.cloud}} 电子邮件传递服务与 Sendmail。下面的示例是在 Centos 6.5 和 Ubuntu 14 的裸机安装上执行的。
 
 ## 预配置
 
@@ -37,7 +35,7 @@ lastupdated: "2017-11-21"
 1. 找到并打开 sendmail.mc 文件。
 2. 注释掉以下行：
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
-3. 还是在 sendmail.mc 文件中，添加代码如下的新行：
+3. 使用以下代码添加新行：
 `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
@@ -45,7 +43,7 @@ lastupdated: "2017-11-21"
 
 ### 在 Ubuntu/Debian 中配置 sendmail.mc
 1. 找到并打开 sendmail.mc 文件。
-2. 在文件底部的“MAILER_DEFINITIONS”行上方放置下列代码：
+2. 在文件底部，将以下代码放在包含“MAILER_DEFINITIONS”的行的上方：
 `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`

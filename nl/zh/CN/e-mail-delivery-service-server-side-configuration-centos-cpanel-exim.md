@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,17 +9,15 @@ lastupdated: "2017-11-21"
 
 # 配置服务器以使用 IBM Cloud 电子邮件传递服务：CentOS、cPanel、Exim
 
-## 概述
-
-使用此信息来配置服务器，配置后即可使用 {{site.data.keyword.cloud}} 电子邮件服务。 
+使用此信息将服务器配置为使用 {{site.data.keyword.cloud}} 电子邮件服务。 
 
 ## 准备
 
 1.  先确认是否能从设备发送电子邮件，然后再添加或更新智能主机设置。如果发送/接收过程中存在问题，请先修复问题，然后再继续。
-2. 执行这些步骤以访问 Exim 配置编辑器：
+2. 执行以下步骤以访问 Exim 配置编辑器：
   * 使用唯一凭证来访问 WHM。
   * 导航到**服务配置 > Exim 配置编辑器**。
-  * 单击屏幕底部的**高级编辑器**按钮以打开编辑器。
+  * 单击**高级编辑器**以打开编辑器。
   
 **注：**
 - 有关使用“高级编辑器”的特定指示信息位于 **Exim 配置编辑器**屏幕中。
@@ -75,6 +73,6 @@ lastupdated: "2017-11-21"
 
 <em>**注：**为了接收转发到外部地址的 root/nobody/cpanel 邮件，cPanel 服务器的主机名需要在 /etc/localdomains 文件中。</em>
 
-## 后续操作
+## 后续步骤
 
 系统对更新后的配置文件运行一系列检查，然后重新启动 Exim。如果您登录到任何 WebMail 页面，请先注销，并在重新启动完成后重新登录。发送测试电子邮件，以确保 [{{site.data.keyword.slportal_full}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window} 中的[电子邮件传递服务 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/services/emaildelivery){: new_window} 屏幕中所使用的信用值正确。
