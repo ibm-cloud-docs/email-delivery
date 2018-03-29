@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-14"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-11-14"
 
 # WHM における SMTP の代替ポートの定義
 
-1. *WHM* にログインします。
-2. *「Service Manager」*をクリックします。
-3. *「Run another copy of Exim on port」* の後ろにポートを設定します。
-4. *「Save」*をクリックします。
+1. **WHM** にログインします。
+2. **「Service Manager」**をクリックします。
+3. **「Run another copy of Exim on port」** の後ろにポートを設定します。
+4. **「Save」**をクリックします。

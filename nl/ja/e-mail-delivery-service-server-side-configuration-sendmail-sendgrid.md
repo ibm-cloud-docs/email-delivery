@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,14 +9,11 @@ lastupdated: "2017-11-21"
 
 # E メール配信サービスのサーバー・サイド構成: Sendmail および SendGrid
 
-## 概説
-
-Sendmail で {{site.data.keyword.cloud}} E メール配信サービスを使用するためにサーバーを構成するには、以下の手順を使用してください。
-以下の例は、Centos 6.5 と Ubuntu 14 のベア・インストールで行ったものです。
+{{site.data.keyword.cloud}} E メール配信サービスを Sendmail で使用するには、以下のステップを実行してサーバーを構成します。以下の例は、Centos 6.5 と Ubuntu 14 のベア・メタル・インストールで行われたものです。
 
 ## 事前構成
 
-Sendmail が {{site.data.keyword.SendGrid}} をスマート・ホストとして正しく使用するには、以下のパッケージのインストールが必要です。
+Sendmail が {{site.data.keyword.SendGrid}} をスマート・ホストとして正しく使用するには、以下のパッケージをインストールする必要があります。
 
 ### RHEL/Centos
 RHEL/Centos の場合は、以下のコマンドを実行します。
@@ -38,7 +35,7 @@ Ubuntu/Debian の場合は、以下のコマンドを実行します。
 1. sendmail.mc ファイルを見つけて開きます。
 2. 以下の行をコメント化します。
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
-3. また、sendmail.mc ファイルに、以下のコードの新規行を追加します。
+3. 以下のコードの新規行を追加します。
 `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
@@ -53,7 +50,7 @@ Ubuntu/Debian の場合は、以下のコマンドを実行します。
 `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
 
 ### sendmail.cf の再生成
-sendmail.mc ファイルは、実際の (さらに複雑な) sendmail.cf 構成ファイルに展開可能なマクロの集合です。変更を sendmail から使用可能にするには、次の m4 コマンドを使用して sendmail.cf を再生成します。
+sendmail.mc ファイルは、実際の (さらに複雑な) sendmail.cf 構成ファイルに展開可能なマクロの集合です。 変更を Sendmail からアクセスできるようにするには、次の m4 コマンドを使用して sendmail.cf を再生成します。
 `m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf`
 
 ## Sendmail の再始動

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,22 +9,20 @@ lastupdated: "2017-11-21"
 
 # IBM Cloud E メール配信サービスを使用するためのサーバーの構成: CentOS、cPanel、および Exim
 
-## 概説
-
-{{site.data.keyword.cloud}} E メール・サービスを使用するためにサーバーを構成するには、以下の情報を使用してください。 
+{{site.data.keyword.cloud}} E メール・サービスを使用するには、この情報を使用してサーバーを構成してください。 
 
 ## 準備
 
-1.  スマート・ホスト設定を追加または更新する前に、デバイスから E メールを送信できることを確認します。送信/受信のプロセスで既存の問題があれば、修正してから先に進んでください。
-2. 以下のステップを実行して、Exim Configuration Editor にアクセスします。
+1.  スマート・ホスト設定を追加または更新する前に、デバイスから E メールを送信できることを確認します。 送信/受信のプロセスで既存の問題があれば、修正してから先に進んでください。
+2. 以下のステップに従って、Exim Configuration Editor にアクセスします。
   * 固有の資格情報を使用して WHM にアクセスします。
   * **「Service Configuration」>「Exim Configuration Editor」**とナビゲートします。
-  * 画面下部の**「Advanced Editor」**ボタンをクリックして、エディターを開きます。
+  * **「Advanced Editor」**をクリックしてエディターを開きます。
   
 **注:**
 - **「Exim Configuration Editor」**画面に Advanced Editor の使用に関する詳細説明があります。
 - この手順により、Exim が障害を起こす可能性があります。
-- **「Exim Configuration Editor」**画面に、ファイル _exim.conf_ の内容が表示されます。Exim Configuration Manager を使用して _exim.conf_ を編集することができます。
+- **「Exim Configuration Editor」**画面に、ファイル _exim.conf_ の内容が表示されます。 Exim Configuration Manager を使用して _exim.conf_ を編集することができます。
 
 ## SendGrid 資格情報を使用した認証
 
@@ -78,4 +76,4 @@ lastupdated: "2017-11-21"
 
 ## 次のステップ
 
-システムは、更新された構成ファイルに対して一連の検査を実行し、Exim を再始動します。WebMail ページにログインしている場合は、ログアウトして、再始動の完了後に再びログインしてください。テスト E メールを送信し、[{{site.data.keyword.slportal_full}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window} の [E メール配信サービス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/services/emaildelivery){: new_window} の画面から適切なクレジットが使用されていることを確認してください。
+システムは、更新された構成ファイルに対して一連の検査を実行し、Exim を再始動します。 WebMail ページにログインしている場合は、ログアウトして、再始動の完了後に再びログインしてください。 テスト E メールを送信し、[{{site.data.keyword.slportal_full}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window} の [E メール配信サービス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/services/emaildelivery){: new_window} の画面から適切なクレジットが使用されていることを確認してください。

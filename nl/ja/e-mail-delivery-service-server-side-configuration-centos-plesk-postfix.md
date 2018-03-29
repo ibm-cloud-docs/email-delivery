@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,13 +9,11 @@ lastupdated: "2017-11-21"
 
 # E メール配信サービスのサーバー・サイド構成: CentOS、Plesk、および Postfix
 
-## 概説
-
-以下は、{{site.data.keyword.SendGrid}} の {{site.data.keyword.cloud}} E メール配信サービスをスマート・ホストとして使用するためのサーバー構成ステップです。以下の例は、CentOS 6.5 の標準 {{site.data.keyword.cloud}} OS 再ロードと、Plesk 12 および Postfix で行ったものです。
+{{site.data.keyword.SendGrid}} の {{site.data.keyword.cloud}} E メール配信サービスをスマート・ホストとして使用するには、これらのステップに従ってサーバーを構成します。以下の例は、CentOS 6.5 の標準 {{site.data.keyword.cloud}} OS 再ロードと、Plesk 12 および Postfix で行ったものです。
 
 ## 構成
 
-1.  Postfix 構成ファイルを見つけます。多くの場合、以下にあります。/etc/postfix/main.cf
+1.  Postfix 構成ファイルを見つけます。 多くの場合、以下にあります。/etc/postfix/main.cf
 2.  テキスト・エディターで main.cf ファイルを開き、以下を構成に追加します。
 
   `smtp_sasl_auth_enable = yes`
@@ -31,13 +29,13 @@ lastupdated: "2017-11-21"
   `relayhost = [smtp.sendgrid.net]:587`
 
 3.  /etc/postfix/main.cf ファイルを保存して閉じます。
-4.  次のコマンドを使用して postfix を再始動します。
+4.  次のコマンドを使用して Postfix を再始動します。
 
   `/etc/init.d/postfix restart`
 
 ## トラブルシューティング
 
-1.  「no mechanism available」のエラーが発生した場合は、認証/暗号化に必要なすべてのライブラリーがあることを確認します。これらのライブラリーは、以下のコマンドでインストールできます。
+1.  「no mechanism available」のエラーが発生した場合は、認証/暗号化に必要なすべてのライブラリーがあることを確認します。 これらのライブラリーは、以下のコマンドでインストールできます。
 
   Debian/Ubuntu の場合:  `apt-get install libsasl2-modules`
 
@@ -47,6 +45,6 @@ lastupdated: "2017-11-21"
 
     /etc/init.d/postfix restart
 
-2.  ポート 587 でうまく動作しない場合は、postfix 構成でポート 2525 を使用します。また、構成ファイル /etc/postfix/main.cf を開いて、以下の行のコメントを外す必要がある場合もあります。
+2.  ポート 587 でうまく動作しない場合は、Postfix 構成でポート 2525 を使用します。また、構成ファイル /etc/postfix/main.cf を開いて、以下の行のコメントを外す必要がある場合もあります。
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`

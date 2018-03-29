@@ -17,5 +17,5 @@ IBM Cloud E メール配信
 
     {: .navgroup id="help"}
     outbound-email-port-25.md
-    how-can-i-setup-alternate-port-smtp-whm.md
+    how-can-i-setup-alternate-port-smtp-whm.md 
     {: .navgroup-end}
