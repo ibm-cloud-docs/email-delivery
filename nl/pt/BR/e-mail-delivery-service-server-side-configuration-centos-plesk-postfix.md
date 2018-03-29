@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,11 +9,7 @@ lastupdated: "2017-11-21"
 
 # Configuração do lado do servidor do serviço de entrega de e-mail: CentOS, Plesk e Postfix
 
-## Visão Geral
-
-Aqui estão as etapas para configurar seu servidor para usar o {{site.data.keyword.SendGrid}},
-que é o serviço de entrega de e-mail do {{site.data.keyword.cloud}} como um host
-inteligente. O exemplo abaixo foi executado com um Recarregamento de S.O. padrão
+Siga estas etapas para configurar o servidor para usar o {{site.data.keyword.SendGrid}}, o serviço de entrega de e-mail do {{site.data.keyword.cloud}}, como um host inteligente. O exemplo abaixo foi executado com um Recarregamento de S.O. padrão
 do {{site.data.keyword.cloud}} do CentOS 6.5 com Plesk 12 e Postfix.
 
 ## Configuração
@@ -53,7 +49,6 @@ comandos a seguir:
 
     /etc/init.d/postfix restart
 
-2.  Se a porta 587 não funcionar, use a porta 2525 na configuração do Postfix. Também pode
-ser necessário abrir o arquivo de configuração /etc/postfix/main.cf e remover o comentário da linha a seguir:
+2.  Se a porta 587 não funcionar, use a porta 2525 na configuração do Postfix. Também pode ser necessário abrir o arquivo de configuração /etc/postfix/main.cf e remover o comentário da linha a seguir:
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`
