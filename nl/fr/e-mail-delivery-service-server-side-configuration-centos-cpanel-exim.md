@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,17 +9,15 @@ lastupdated: "2017-11-21"
 
 # Configuration de votre serveur pour l'utilisation du service de diffusion de courriers électroniques IBM Cloud : CentOS, cPanel et Exim
 
-## Présentation
-
 Utilisez ces informations pour configurer votre serveur pour l'utilisation du service de messagerie électronique {{site.data.keyword.cloud}}. 
 
 ## Préparation
 
 1.  Confirmez que vous pouvez envoyer des courriers électroniques à partir de l'appareil avant d'ajouter ou de mettre à jour les paramètres de l'hôte actif. Corrigez tous les problèmes éventuels de processus d'envoi/réception avant de continuer.
-2. Suivez cette procédure pour accéder à l'éditeur de configuration Exim :
+2. Pour accéder à l'éditeur de configuration Exim, procédez comme suit :
   * Accédez à WHM en utilisant vos données d'identification uniques.
   * Accédez à **Service configuration > Exim Configuration Editor**.
-  * Cliquez sur le bouton **Advanced Editor** au bas de l'écran pour ouvrir l'éditeur.
+  * Cliquez sur **Editeur avancé** pour ouvrir l'éditeur.
   
 **Remarques :**
 - Des instructions spécifiques pour l'utilisation de l'éditeur Advanced Editor se trouvent sur l'écran **Exim Configuration Editor**.

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,9 +9,7 @@ lastupdated: "2017-11-21"
 
 # Configuration du service de diffusion de courriers électroniques côté serveur : CentOS, Plesk et Postfix
 
-## Présentation
-
-Voici la procédure à suivre pour configurer votre serveur pour l'utilisation de {{site.data.keyword.SendGrid}}, le service de diffusion de courriers électroniques {{site.data.keyword.cloud}}, comme hôte actif. L'exemple ci-dessous a été réalisé avec un rechargement standard de système d'exploitation {{site.data.keyword.cloud}} de CentOS 6.5 avec Plesk 12 et Postfix.
+Pour configurer votre serveur pour l'utilisation de {{site.data.keyword.SendGrid}}, le service de diffusion de courriers électroniques {{site.data.keyword.cloud}}, comme hôte actif, procédez comme comme indiqué ci-après. L'exemple ci-dessous a été réalisé avec un rechargement standard de système d'exploitation {{site.data.keyword.cloud}} de CentOS 6.5 avec Plesk 12 et Postfix.
 
 ## Configuration
 
@@ -31,7 +29,7 @@ Voici la procédure à suivre pour configurer votre serveur pour l'utilisation d
   `relayhost = [smtp.sendgrid.net]:587`
 
 3.  Sauvegardez et fermez le fichier /etc/postfix/main.cf.
-4.  Redémarrez Postfix en utilisant cette commande :
+4.  Redémarrez Postfix avec la commande suivante :
 
   `/etc/init.d/postfix restart`
 
@@ -47,6 +45,6 @@ Voici la procédure à suivre pour configurer votre serveur pour l'utilisation d
 
     /etc/init.d/postfix restart
 
-2.  Si le port 587 ne fonctionne pas, utilisez le port 2525 dans la configuration Postfix. Il vous faudra peut-être ouvrir le fichier de configuration /etc/postfix/main.cf et supprimer la mise en commentaire de la ligne suivante :
+2.  Si le port 587 ne fonctionne pas, utilisez le port 2525 dans la configuration Postfix. Il vous faudra peut-être également ouvrir le fichier de configuration /etc/postfix/main.cf et supprimer la mise en commentaire de la ligne suivante :
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`

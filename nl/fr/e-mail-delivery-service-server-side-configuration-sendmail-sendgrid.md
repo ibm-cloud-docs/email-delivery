@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,10 +9,7 @@ lastupdated: "2017-11-21"
 
 # Configuration du service de diffusion de courriers électroniques côté serveur : Sendmail et SendGrid
 
-## Présentation
-
-Suivez cette procédure pour configurer votre serveur pour l'utilisation du service de diffusion de courriers électroniques {{site.data.keyword.cloud}} avec
-Sendmail. L'exemple ci-dessous a été réalisé sur une installation de Centos 6.5 et Ubuntu 14 sur un serveur bare metal.
+Pour configurer votre serveur pour l'utilisation du service de diffusion de courriers électroniques {{site.data.keyword.cloud}} avec Sendmail, procédez comme comme indiqué ci-après. L'exemple ci-dessous a été réalisé sur une installation bare metal de Centos 6.5 et Ubuntu 14 sur un serveur bare metal.
 
 ## Configuration préalable
 
@@ -38,7 +35,7 @@ Pour Ubuntu/Debian, exécutez cette commande :
 1. Localisez et ouvrez le fichier sendmail.mc.
 2. Mettez en commentaire la ligne suivante :
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
-3. Toujours dans le fichier sendmail.mc, ajoutez des nouvelles lignes avec le code suivant :
+3. Ajoutez des nouvelles lignes avec le code suivant :
 `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
@@ -53,7 +50,7 @@ Pour Ubuntu/Debian, exécutez cette commande :
 `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
 
 ### Générez à nouveau le fichier sendmail.cf
-Le fichier sendmail.mc est une collection de macros pouvant être développée dans le fichier de configuration sendmail.cf réel (et plus complexe). Pour rendre vos modifications accessibles à Sendmail, générez à nouveau le fichier sendmail.cf en utilisant la commande m4 :
+Le fichier sendmail.mc est une collection de macros pouvant être développée dans le fichier de configuration sendmail.cf réel (et plus complexe). Pour que vos modifications accessibles à Sendmail, générez à nouveau le fichier sendmail.cf avec la commande m4 :
 `m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf`
 
 ## Redémarrage de Sendmail
