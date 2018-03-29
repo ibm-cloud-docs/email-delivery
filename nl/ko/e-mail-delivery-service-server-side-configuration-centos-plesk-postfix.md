@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,9 +9,7 @@ lastupdated: "2017-11-21"
 
 # 이메일 전송 서비스 서버 측 구성: CentOS, Plesk 및 Postfix
 
-## 개요
-
-다음은 {{site.data.keyword.SendGrid}}, 즉 {{site.data.keyword.cloud}} 이메일 전송 서비스를 스마트 호스트로 사용하도록 서버를 구성하는 단계입니다. 다음 예제는 Plesk 12 및 Postfix가 포함된 CentOS 6.5의 표준 {{site.data.keyword.cloud}} OS 재로드에서 수행되었습니다.
+다음 단계를 따라 {{site.data.keyword.SendGrid}}, 즉 {{site.data.keyword.cloud}} 이메일 전송 서비스를 스마트 호스트로 사용하도록 서버를 구성하십시오. 다음 예제는 Plesk 12 및 Postfix가 포함된 CentOS 6.5의 표준 {{site.data.keyword.cloud}} OS 재로드에서 수행되었습니다.
 
 ## 구성
 
@@ -31,7 +29,7 @@ lastupdated: "2017-11-21"
   `relayhost = [smtp.sendgrid.net]:587`
 
 3.  /etc/postfix/main.cf 파일을 저장하고 닫으십시오.
-4.  다음 명령을 사용하여 postfix를 다시 시작하십시오.
+4.  다음 명령을 사용하여 Postfix를 다시 시작하십시오.
 
   `/etc/init.d/postfix restart`
 
@@ -47,6 +45,6 @@ lastupdated: "2017-11-21"
 
     /etc/init.d/postfix restart
 
-2.  포트 587이 작동되지 않는 경우 postfix 구성에서 포트 2525를 사용하십시오. 또한 구성 파일 /etc/postfix/main.cf를 열고 다음 행을 주석 해제해야 합니다.
+2.  포트 587이 작동되지 않는 경우 Postfix 구성에서 포트 2525를 사용하십시오. 또한 구성 파일 /etc/postfix/main.cf를 열고 다음 행을 주석 해제해야 합니다.
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`
