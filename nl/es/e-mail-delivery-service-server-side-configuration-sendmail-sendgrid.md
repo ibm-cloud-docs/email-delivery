@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,13 +9,11 @@ lastupdated: "2017-11-21"
 
 # Configuración de lado del servidor del servicio de entrega de correo electrónico: Sendmail y SendGrid
 
-## Visión general
-
-Utilice este procedimiento para configurar su servidor para utilizar el servicio de entrega de correo electrónico de {{site.data.keyword.cloud}} con Sendmail. El siguiente ejemplo se ha realizado en una instalación nativa de Centos 6.5 y Ubuntu 14.
+Complete los pasos siguientes para configurar su servidor para utilizar el servicio de entrega de correo electrónico de {{site.data.keyword.cloud}} con Sendmail. El siguiente ejemplo se ha realizado en una instalación bare metal de Centos 6.5 y Ubuntu 14.
 
 ## Preconfiguración
 
-Deberá instalar los paquetes siguientes para que Sendmail utilice correctamente {{site.data.keyword.SendGrid}} como si fuera un smarthost.
+Necesita instalar los paquetes siguientes para que Sendmail utilice correctamente {{site.data.keyword.SendGrid}} como si fuera un smarthost.
 
 ### RHEL/Centos
 Para RHEL/Centos, ejecute este mandato:
@@ -31,26 +29,28 @@ Para Ubuntu/Debian, ejecute este mandato:
 `AuthInfo:smtp.sendgrid.net "U:YOUR_SENDGRID_USER" "P:YOUR_SENDGRID_PASSWORD" "M:PLAIN"`
 2. Ejecute el siguiente mandato para generar la correlación de base de datos /etc/mail/access.db:
 `makemap hash /etc/mail/access.db < /etc/mail/access`
-3. Edite el archivo /etc/mail/sendmail.mc para utilizar {{site.data.keyword.SendGrid}} como nuestro propio smarthost. 
+3. Edite el archivo /etc/mail/sendmail.mc para utilizar {{site.data.keyword.SendGrid}} como nuestro propio smarthost.
 
 ### Configure sendmail.mc en RHEL/Centos
 1. Busque y abra el archivo sendmail.mc.
 2. Comente la siguiente línea:
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
-3. También el archivo sendmail.mc y añada nuevas líneas con el código siguiente: `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
+3. Añada nuevas líneas con el código siguiente:
+`define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
 `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
 
 ### Configure sendmail.mc en Ubuntu/Debian
 1. Busque y abra el archivo sendmail.mc.
-2. Al final del archivo ponga el código siguiente sobre la línea que dice 'MAILER_DEFINITIONS' `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
+2. Al final del archivo ponga el código siguiente encima de la línea que dice 'MAILER_DEFINITIONS'
+`define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
 `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
 
 ### Vuelva a generar sendmail.cf
-El archivo sendmail.mc es una recopilación de macros que pueden ampliarse en el archivo de configuración real (y más complejo) sendmail.cf. Para que los cambios sean accesibles para sendmail, vuelva a generar sendmail.cf con el mandato m4:
+El archivo sendmail.mc es una recopilación de macros que pueden ampliarse en el archivo de configuración real (y más complejo) sendmail.cf. Para que los cambios sean accesibles para Sendmail, vuelva a generar sendmail.cf con el mandato m4:
 `m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf`
 
 ## Reinicie Sendmail

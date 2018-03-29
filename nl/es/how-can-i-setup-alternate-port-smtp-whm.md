@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-14"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-11-14"
 
 # Defina un puerto alternativo para SMTP en WHM
 
-1. Inicie la sesión en *WHM*.
-2. Pulse *Gestor de servicios*.
-3. Defina el puerto en *Ejecute otra copia de Exim en puerto*.
-4. Pulse *Guardar*.
+1. Inicie la sesión en **WHM**.
+2. Pulse **Gestor de servicios**.
+3. Defina el puerto en **Ejecute otra copia de Exim en puerto**.
+4. Pulse **Guardar**.
