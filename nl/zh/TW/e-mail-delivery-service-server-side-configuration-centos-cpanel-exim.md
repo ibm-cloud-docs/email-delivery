@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,17 +9,15 @@ lastupdated: "2017-11-21"
 
 # 配置伺服器以使用 IBM Cloud 電子郵件遞送服務：CentOS、cPanel 及 Exim
 
-## 概觀
-
 請使用此資訊以配置伺服器來使用 {{site.data.keyword.cloud}} 電子郵件服務。 
 
 ## 準備
 
 1.  確認您可以從裝置傳送電子郵件，然後才新增或更新智慧型主機設定。請先修正傳送/接收程序中的任何現有問題，然後才繼續。
-2. 執行下列步驟以存取 Exim Configuration Editor：
+2. 遵循下列步驟以存取 Exim Configuration Editor：
   * 使用您的唯一認證存取 WHM。
   * 導覽至 **Service Configuration > Exim Configuration Editor**。
-  * 按一下畫面底端的 **Advanced Editor** 按鈕以開啟編輯器。
+  * 按一下**進階編輯器**以開啟編輯器。
   
 **附註：**
 - 使用 Advanced Editor 的特定指示位於 **Exim Configuration Editor** 畫面。
@@ -75,6 +73,6 @@ lastupdated: "2017-11-21"
 
 <em>**附註：**為了收到轉遞給外部位址的 root/nobody/cpanel 郵件，cPanel 伺服器的主機名稱需要在 /etc/localdomains 檔案中。</em>
 
-## 後續情形
+## 後續步驟
 
 系統會針對更新過的配置檔執行一系列的檢查，並重新啟動 Exim。如果您登入任何 WebMail 頁面，請登出並在重新啟動完成之後重新登入。從 [{{site.data.keyword.slportal_full}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window} 中的 [E-mail Delivery 服務 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/services/emaildelivery){: new_window} 畫面，傳送測試電子郵件以確定使用了適當的認證。

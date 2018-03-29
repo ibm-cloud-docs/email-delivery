@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,13 +9,11 @@ lastupdated: "2017-11-21"
 
 # 電子郵件遞送服務伺服器端配置：Sendmail 及 SendGrid
 
-## 概觀
-
-請使用此程序配置您的伺服器以使用 {{site.data.keyword.cloud}} 電子郵件遞送服務搭配 Sendmail。下列範例是在僅安裝 Centos 6.5 和 Ubuntu 14 的情況下執行。
+請完成下列步驟，配置您的伺服器以使用 {{site.data.keyword.cloud}} 電子郵件遞送服務搭配 Sendmail。下列範例是在裸機安裝 Centos 6.5 和 Ubuntu 14 的情況下執行。
 
 ## 配置前
 
-您將需要安裝下列套件，Sendmail 才能適當地使用 {{site.data.keyword.SendGrid}} 作為智慧型主機。
+您需要安裝下列套件，Sendmail 才能適當地使用 {{site.data.keyword.SendGrid}} 作為智慧型主機。
 
 ### RHEL/Centos
 若為 RHEL/Centos，請執行下列指令：
@@ -37,7 +35,7 @@ lastupdated: "2017-11-21"
 1. 找到並開啟 sendmail.mc 檔案。
 2. 註銷下行：
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
-3. 同樣對 sendmail.mc 檔案，將下列程式碼新增為新行：
+3. 將下列程式碼新增為新行：
 `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
 `FEATURE('access_db')dnl`
 `define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl`
@@ -52,7 +50,7 @@ lastupdated: "2017-11-21"
 `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
 
 ### 重新產生 sendmail.cf
-sendmail.mc 檔案是巨集的集合，可以展開成為真實（且更複雜）的 sendmail.cf 配置檔。若要讓您的變更可供 sendmail 存取，請使用 m4 指令重新產生 sendmail.cf：
+sendmail.mc 檔案是巨集的集合，可以展開成為真實（且更複雜）的 sendmail.cf 配置檔。若要讓您的變更可供 Sendmail 存取，請使用 m4 指令重新產生 sendmail.cf：
 `m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf`
 
 ## 重新啟動 Sendmail

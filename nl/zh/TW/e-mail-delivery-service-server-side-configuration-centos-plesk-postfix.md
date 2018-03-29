@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,9 +9,7 @@ lastupdated: "2017-11-21"
 
 # 電子郵件遞送服務伺服器端配置：CentOS、Plesk 及 Postfix
 
-## 概觀
-
-下列步驟可配置您的伺服器以使用 {{site.data.keyword.SendGrid}}（{{site.data.keyword.cloud}} 電子郵件遞送服務）作為智慧型主機。下列範例是使用標準的 {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 與 Plesk 12 和 Postfix 所執行。
+請遵循下列步驟，配置您的伺服器以使用 {{site.data.keyword.SendGrid}}（{{site.data.keyword.cloud}} 電子郵件遞送服務）作為智慧型主機。下列範例是使用標準的 {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 與 Plesk 12 和 Postfix 所執行。
 
 ## 配置
 
@@ -31,7 +29,7 @@ lastupdated: "2017-11-21"
   `relayhost = [smtp.sendgrid.net]:587`
 
 3.  儲存並關閉 /etc/postfix/main.cf 檔案。
-4.  使用這個指令重新啟動 postfix：
+4.  使用這個指令重新啟動 Postfix：
 
   `/etc/init.d/postfix restart`
 
@@ -47,6 +45,6 @@ lastupdated: "2017-11-21"
 
     /etc/init.d/postfix restart
 
-2.  如果埠 587 無法運作，請在 postfix 配置中使用埠 2525。您也可能需要開啟配置檔 /etc/postfix/main.cf 並將下行解除註解：
+2.  如果埠 587 無法運作，請在 Postfix 配置中使用埠 2525。您也可能需要開啟配置檔 /etc/postfix/main.cf 並將下行解除註解：
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`
