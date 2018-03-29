@@ -1,15 +1,13 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Server für die Verwendung des E-Mail-Zustellungsservice von IBM Cloud konfigurieren: CentOS, cPanel und Exim
-
-## Übersicht
 
 Verwenden Sie diese Informationen, um Ihren Server für die Verwendung des {{site.data.keyword.cloud}}-E-Mail-Service zu konfigurieren. 
 
@@ -19,7 +17,7 @@ Verwenden Sie diese Informationen, um Ihren Server für die Verwendung des {{sit
 2. Führen Sie diese Schritte aus, um auf den Exim-Konfigurationseditor zuzugreifen:
   * Rufen Sie WHM mit Ihren eindeutigen Berechtigungsnachweisen auf.
   * Navigieren Sie zu **Servicekonfiguration > Exim-Konfigurationseditor**.
-  * Klicken Sie auf die Schaltfläche **Erweiterter Editor** im unteren Bereich der Anzeige, um den Editor zu öffnen.
+  * Klicken Sie auf **Erweiterter Editor**, um den Editor zu öffnen.
   
 **Hinweise:**
 - Spezifische Anweisungen zur Verwendung des erweiterten Editors befinden sich in der Anzeige **Exim-Konfigurationseditor**.

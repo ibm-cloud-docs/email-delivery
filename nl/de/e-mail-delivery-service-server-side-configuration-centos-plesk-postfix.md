@@ -1,15 +1,13 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-21"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Serverseitige Konfiguration für den E-Mail-Zustellungsservice: CentOS, Plesk und Postfix
-
-## Übersicht
 
 Mit den folgenden Schritten können Sie Ihren Server für die Verwendung von {{site.data.keyword.SendGrid}}, den {{site.data.keyword.cloud}}-E-Mail-Zustellungsservice, als Smart Host konfigurieren. Für das nachfolgend beschriebene Beispiel wurde ein standardmäßiges erneutes Laden des Betriebssystems von CentOS 6.5 mit Plesk 12 und Postfix in {{site.data.keyword.cloud}} verwendet.
 

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 1994, 2017
-lastupdated: "2017-11-14"
+  years: 2014, 2018
+lastupdated: "2018-03-21"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2017-11-14"
 
 # Alternativen Port für SMTP in WHM definieren
 
-1. Melden Sie sich bei *WHM* an.
-2. Klicken Sie auf *Service Manager*.
-3. Geben Sie den Port nach *Weitere Exim-Kopie ausführen an Port* an.
-4. Klicken Sie auf *Speichern*.
+1. Melden Sie sich bei **WHM** an.
+2. Klicken Sie auf **Service Manager**.
+3. Geben Sie den Port nach **Weitere Exim-Kopie ausführen an Port** an.
+4. Klicken Sie auf **Speichern**.
