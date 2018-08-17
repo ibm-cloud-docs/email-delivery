@@ -5,17 +5,16 @@
 IBM Cloud Email Delivery
 
     {: .navgroup id="learn"}
+    about.md
     index.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     e-mail-delivery-service-server-side-configuration-sendmail-sendgrid.md
-    e-mail-delivery-service-server-side-configuration-centos-cpanel-exim.md
     e-mail-delivery-service-server-side-configuration-mailenableiis-sendgrid.md
     e-mail-delivery-service-server-side-configuration-centos-plesk-postfix.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
-    outbound-email-port-25.md
-    how-can-i-setup-alternate-port-smtp-whm.md 
+    FAQs.md
     {: .navgroup-end}
