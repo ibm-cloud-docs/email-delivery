@@ -31,3 +31,7 @@ If you need send email from your servers, you need to use a smart host outside o
 2. Click **Service Manager**.
 3. Set the port after **Run another copy of Exim on port**.
 4. Click **Save**.
+
+## I can't see email and I am seeing port 25 blocked. Why?
+
+By default, the standard SMTP TCP port 25 is blocked due to the large amount of abuse that is targeted at this port. {{site.data.keyword.BluSoftlayer_notm}} offers a trusted third party email relay service from SendGrid if you need to send outbound email from their domains or applications.
