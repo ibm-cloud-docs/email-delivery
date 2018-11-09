@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="email-delivery" audience="compute" href="/docs/infrastructure/email-delivery/index.html"}
+{: .toc subcollection="email-delivery" audience="compute" arm="3816100" href="/docs/infrastructure/email-delivery/index.html"}
 IBM Cloud Email Delivery
 
     {: .navgroup id="learn"}
