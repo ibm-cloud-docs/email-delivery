@@ -18,7 +18,7 @@ Follow these steps to configure your server to use {{site.data.keyword.SendGrid}
 
   `smtp_sasl_auth_enable = yes`
 
-  `smtp_sasl_password_maps = static:_Your SendGrid Username_:_Your SendGrid Password_`
+  `smtp_sasl_password_maps = static:_Your {{site.data.keyword.SendGrid}} Username_:_Your {{site.data.keyword.SendGrid}} Password_`
 
   `smtp_sasl_security_options = noanonymous`
 

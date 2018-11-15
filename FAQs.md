@@ -18,7 +18,7 @@ Starting 28 October 2015, {{site.data.keyword.BluSoftlayer_notm}} no longer allo
 ## Why is a standard email port blocked?
 {: faq}
 
-By default, the standard SMTP TCP port 25 is blocked due to the large amount of abuse that is targeted at this port. {{site.data.keyword.BluSoftlayer_notm}} offers a trusted third-party email relay service from SendGrid if you need to send outbound email from their domains or applications.  
+By default, the standard SMTP TCP port 25 is blocked due to the large amount of abuse that is targeted at this port. {{site.data.keyword.BluSoftlayer_notm}} offers a trusted third-party email relay service from {{site.data.keyword.SendGrid}} if you need to send outbound email from their domains or applications.  
 
 ## What options do I have if I want to send email from my server or application?
 {: faq}
@@ -28,7 +28,7 @@ If you need send email from your servers, you need to use a smart host outside o
 ## Does IBM Cloud offer a smart host service?
 {: faq}
 
-{{site.data.keyword.BluSoftlayer_notm}} now offers an email delivery service that is powered by SendGrid that allows clients to use a smart host to relay your outbound mail services. This service has many other functions such as generating metrics, tracking email lists, tracking email activity, assisting with newsletters, and authenticating.
+{{site.data.keyword.BluSoftlayer_notm}} now offers an email delivery service that is powered by {{site.data.keyword.SendGrid}} that allows clients to use a smart host to relay your outbound mail services. This service has many other functions such as generating metrics, tracking email lists, tracking email activity, assisting with newsletters, and authenticating.
 
 ## How can I set up an alternative port for SMTP in WHM
 {: faq}
@@ -41,4 +41,4 @@ If you need send email from your servers, you need to use a smart host outside o
 ## I can't see email and I am seeing port 25 blocked. Why?
 {: faq}
 
-By default, the standard SMTP TCP port 25 is blocked due to the large amount of abuse that is targeted at this port. {{site.data.keyword.BluSoftlayer_notm}} offers a trusted third-party email relay service from SendGrid if you need to send outbound email from their domains or applications.
+By default, the standard SMTP TCP port 25 is blocked due to the large amount of abuse that is targeted at this port. {{site.data.keyword.BluSoftlayer_notm}} offers a trusted third-party email relay service from {{site.data.keyword.SendGrid}} if you need to send outbound email from their domains or applications.
