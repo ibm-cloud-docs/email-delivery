@@ -15,9 +15,9 @@ Complete the following steps to configure your server to use {{site.data.keyword
 
 1.  Open IIS Manager in Windows.
 2.  Click your site. The main configuration options page is displayed to the right.
-3.  Double-click the **SMTP E-mail** icon.
+3.  Double-click the **SMTP Email** icon.
 4.  In the email address field, type the email address of the sender.
-5.  Click **Deliver e-mail to SMTP server radio**.
+5.  Click **Deliver email to SMTP server radio**.
 6.  In the **SMTP Server** field, type `smtp.sendgrid.net`.
 7.  In the **Port** field type `587`.
 8.  Under **Authentication Settings**, choose **Specify Credentials** and click **Set**.

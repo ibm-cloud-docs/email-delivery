@@ -9,14 +9,14 @@ lastupdated: "2018-03-21"
 
 # Email delivery service server-side configuration for Sendmail and SendGrid
 
-Complete the following steps to configure your server to use the {{site.data.keyword.cloud}} email delivery service with Sendmail. This example is a bare metal installation of Centos 6.5 and Ubuntu 14.
+Complete the following steps to configure your server to use the {{site.data.keyword.cloud}} email delivery service with Sendmail. This example is a bare metal installation of CentOS 6.5 and Ubuntu 14.
 
 ## Pre-Configuration
 
 You need to install the following packages for Sendmail to properly use {{site.data.keyword.SendGrid}} as a smart host.
 
-### RHEL and Centos
-For RHEL/Centos, run this command:
+### RHEL and CentOS
+For RHEL/CentOS, run this command:
 `yum install cyrus-sasl-plain sendmail sendmail-cf`
 
 ### Ubuntu and Debian
@@ -31,7 +31,7 @@ For Ubuntu and Debian, run this command:
 `makemap hash /etc/mail/access.db < /etc/mail/access`
 3. Edit the /etc/mail/sendmail.mc file to use {{site.data.keyword.SendGrid}} as our smart host.
 
-### Configure sendmail.mc in RHEL/Centos
+### Configure sendmail.mc in RHEL and CentOS
 1. Locate and open the sendmail.mc file.
 2. Comment out the following line: 
 `dnl define('SMART_HOST', 'smtp.your.provider')dnl`

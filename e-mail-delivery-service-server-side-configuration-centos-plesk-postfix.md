@@ -35,7 +35,7 @@ Follow these steps to configure your server to use {{site.data.keyword.SendGrid}
 
 ## Troubleshooting
 
-1.  If you get the "no mechanism available" error, verify that you have all of the neccesary libraries for authentication/encryption. You can install these libraries using the following commands:
+1.  If you get the "no mechanism available" error, verify that you have all of the necessary libraries for authentication/encryption. You can install these libraries using the following commands:
 
   For Debian and Ubuntu, use this command:  `apt-get install libsasl2-modules`
 
