@@ -7,14 +7,14 @@ lastupdated: "2018-03-21"
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Email delivery service server-side configuration: CentOS, Plesk, and Postfix
+# Email delivery service server-side configuration for CentOS, Plesk, and Postfix
 
-Follow these steps to configure your server to use {{site.data.keyword.SendGrid}}, the {{site.data.keyword.cloud}} email delivery service as a smart host. The example below was performed with a standard {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 with Plesk 12 and Postfix.
+Follow these steps to configure your server to use {{site.data.keyword.SendGrid}}, the {{site.data.keyword.cloud}} email delivery service as a smart host. The following example is a standard {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 with Plesk 12 and Postfix.
 
 ## Configuration
 
-1.  Locate your Postfix configuration file. It is often located here: /etc/postfix/main.cf.
-2.  Open main.cf file with a text editor and add the following to the configuration.
+1. Locate your Postfix configuration file. A common location is `/etc/postfix/main.cf`.
+2. Open main.cf file with a text editor and add the following to the configuration.
 
   `smtp_sasl_auth_enable = yes`
 
@@ -28,23 +28,23 @@ Follow these steps to configure your server to use {{site.data.keyword.SendGrid}
 
   `relayhost = [smtp.sendgrid.net]:587`
 
-3.  Save and close the /etc/postfix/main.cf file.
-4.  Restart Postfix using this command:
+3. Save and close the /etc/postfix/main.cf file.
+4. Restart Postfix by using this command:
 
   `/etc/init.d/postfix restart`
 
 ## Troubleshooting
 
-1.  If you get a "no mechanism available" error, verify that you have all of the neccesary libraries for authentication/encryption. You can install these libraries using the following commands:
+1.  If you get the "no mechanism available" error, verify that you have all of the neccesary libraries for authentication/encryption. You can install these libraries using the following commands:
 
-  For Debian/Ubuntu:  `apt-get install libsasl2-modules`
+  For Debian and Ubuntu, use this command:  `apt-get install libsasl2-modules`
 
-  For Redhat/CentOS: `yum install cyrus-sasl-plain`
+  For Redhat and CentOS, use this command: `yum install cyrus-sasl-plain`
 
-  After you install these libraries, issue the same restart command:
+  After you install these libraries, use the same restart command:
 
-    /etc/init.d/postfix restart
+    `/etc/init.d/postfix restart`
 
-2.  If port 587 does not work, use port 2525 in the Postfix configuration. You might also need to open the configuration file /etc/postfix/main.cf  and uncomment the following line:
+2.  If port 587 does not work, use port 2525 in the Postfix configuration. You might also need to open the configuration file `/etc/postfix/main.cf`  and uncomment the following line:
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`
