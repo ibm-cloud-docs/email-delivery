@@ -2,6 +2,8 @@
 copyright:
   years: 2014, 2018
 lastupdated: "2018-08-16"
+
+subcollection: email-delivery
 ---
 
 {:shortdesc: .shortdesc}
