@@ -1,19 +1,29 @@
 ---
+
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-03-21"
 
+keywords: email delivery server configuration, centos, plesk, postfix
+
 subcollection: email-delivery
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Email delivery service server-side configuration for CentOS, Plesk, and Postfix
+{: email-delivery-server-config}
 
 Follow these steps to configure your server to use {{site.data.keyword.SendGrid}}, the {{site.data.keyword.cloud}} email delivery service as a smart host. The following example is a standard {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 with Plesk 12 and Postfix.
 
 ## Configuration
+{: #email-delivery-config}
 
 1. Locate your Postfix configuration file. A common location is `/etc/postfix/main.cf`.
 2. Open main.cf file with a text editor and add the following to the configuration.
@@ -36,6 +46,7 @@ Follow these steps to configure your server to use {{site.data.keyword.SendGrid}
   `/etc/init.d/postfix restart`
 
 ## Troubleshooting
+{: #email-delivery-troubleshoot}
 
 1.  If you get the "no mechanism available" error, verify that you have all of the necessary libraries for authentication/encryption. You can install these libraries using the following commands:
 
