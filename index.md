@@ -1,15 +1,24 @@
 ---
+
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-08-16"
 
+keywords: getting started email delivery
+
 subcollection: email-delivery
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Getting started tutorial
+{: #getting-started-email-delivery}
 
 Use this information to configure your server to use {{site.data.keyword.cloud}} email service.
 
