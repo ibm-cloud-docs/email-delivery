@@ -1,15 +1,24 @@
 ---
+
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-03-21"
 
+keywords: Email delivery server configuration, Sendmail, SendGrid
+
 subcollection: email-delivery
+
 ---
 
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
+{:pre: .pre}
+{:table: .aria-labeledby="caption"}
 
 # Email delivery service server-side configuration for Sendmail and SendGrid
+{: #Email-delivery-server-configuration-Sendmail-SendGrid}
 
 Complete the following steps to configure your server to use the {{site.data.keyword.cloud}} email delivery service with Sendmail. This example is a bare metal installation of CentOS 6.5 and Ubuntu 14.
 
