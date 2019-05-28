@@ -5,8 +5,8 @@
 IBM Cloud Email Delivery
 
     {: .navgroup id="learn"}
-    about.md
     index.md
+    about.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
