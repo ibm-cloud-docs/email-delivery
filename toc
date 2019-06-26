@@ -5,11 +5,12 @@
 IBM Cloud Email Delivery
 
     {: .navgroup id="learn"}
-    index.md
+    getting-started.md
     about.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    /vsi/virtual-servers-navigating-devices
     e-mail-delivery-service-server-side-configuration-sendmail-sendgrid.md
     e-mail-delivery-service-server-side-configuration-mailenableiis-sendgrid.md
     e-mail-delivery-service-server-side-configuration-centos-plesk-postfix.md

@@ -18,6 +18,7 @@ subcollection: email-delivery
 
 # Define an alternate port for SMTP in WHM
 {: #define-alt-port-smtp-whm}
+{: faq}
 
 1. Log into **WHM**.
 2. Click **Service Manager**.
