@@ -86,4 +86,4 @@ Click the **Save** at the end of the page.
 
 ## Next Steps
 
-The system runs a series of checks against the updated configuration file and restarts Exim. If you are logged in to any WebMail pages, log out and log back in after the restart is complete. Send a test email to ensure that the proper credits are used from the Email Delivery Service screen in the {{site.data.keyword.cloud}}.
+The system runs a series of checks against the updated configuration file and restarts Exim. If you are logged in to any WebMail pages, log out and log back in after the restart is complete. Send a test email to ensure that the proper credits are used from the Email Delivery Service screen in the {{site.data.keyword.cloud}} console.
