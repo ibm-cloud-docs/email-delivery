@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-08-16"
+lastupdated: "2019-06-26"
 
 keywords: getting started email delivery
 
