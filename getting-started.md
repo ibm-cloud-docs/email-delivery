@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-06-26"
+lastupdated: "2019-08-01"
 
 keywords: getting started email delivery
 
@@ -17,7 +17,7 @@ subcollection: email-delivery
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Getting started tutorial
+# Getting started with email delivery
 {: #getting-started}
 
 Use this information to configure your server to use {{site.data.keyword.cloud}} email service.
