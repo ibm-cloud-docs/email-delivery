@@ -17,7 +17,7 @@ subcollection: email-delivery
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Email delivery service server-side configuration for CentOS, Plesk, and Postfix
+# Configuring server-side email delivery service for CentOS, Plesk, and Postfix
 {: email-delivery-server-config}
 
 Follow these steps to configure your server to use {{site.data.keyword.SendGrid}}, the {{site.data.keyword.cloud}} email delivery service as a smart host. The following example is a standard {{site.data.keyword.cloud}} OS Reload of CentOS 6.5 with Plesk 12 and Postfix.

@@ -17,7 +17,7 @@ subcollection: email-delivery
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 
-# Email delivery service server-side configuration for IIS MailEnable and SendGrid
+# Configuring server-side email delivery service for IIS MailEnable and SendGrid
 {: #Email-delivery-server-configuration-IISMailEnable-SendGrid}
 
 Complete the following steps to configure your server to use {{site.data.keyword.cloud}} email delivery service as a smart host. These examples are for standard Windows 2008 or 2012 server with MailEnable or IIS configured as your SMTP service.
