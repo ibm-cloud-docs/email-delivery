@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-03-21"
+lastupdated: "2019-08-21"
 
 keywords: email delivery server configuration, centos, plesk, postfix
 
@@ -48,7 +48,7 @@ Follow these steps to configure your server to use {{site.data.keyword.SendGrid}
 ## Troubleshooting
 {: #email-delivery-troubleshoot}
 
-1.  If you get the "no mechanism available" error, verify that you have all of the necessary libraries for authentication/encryption. You can install these libraries using the following commands:
+1.  If you get the error `"no mechanism available"`, verify that you have all of the necessary libraries for authentication and encryption. You can install these libraries by using the following commands:
 
   For Debian and Ubuntu, use this command:  `apt-get install libsasl2-modules`
 
@@ -58,6 +58,6 @@ Follow these steps to configure your server to use {{site.data.keyword.SendGrid}
 
     `/etc/init.d/postfix restart`
 
-2.  If port 587 does not work, use port 2525 in the Postfix configuration. You might also need to open the configuration file `/etc/postfix/main.cf`  and uncomment the following line:
+2.  If port 587 does not work, use port 2525 in the Postfix configuration. You might also need to open the configuration file `/etc/postfix/main.cf` and uncomment the following line:
 
   `#tlsmgr unix - - n 1000? 1 tlsmgr`
