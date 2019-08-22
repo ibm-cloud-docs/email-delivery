@@ -27,17 +27,17 @@ Use this information to configure your server to use {{site.data.keyword.cloud}}
 1.  Confirm that you can send emails from the device before you add or update smart host settings. Fix any existing problems in the send and receive process before you proceed.
 2. Follow these steps to access the Exim Configuration Editor:
   * Access WHM with your unique credentials.
-  * Navigate to **Service Configuration > Exim Configuration Editor**.
+  * Go to **Service Configuration > Exim Configuration Editor**.
   * Click **Advanced Editor** to open the editor.
 
 **Notes**
 - Specific instructions for using the Advanced Editor are on the **Exim Configuration Editor** screen.
 - This procedure can cause Exim to fail.
-- The **Exim Configuration Editor** screen displays the contents of the file _exim.conf_. You can edit _exim.conf_ using the Exim Configuration Manager.
+- The **Exim Configuration Editor** screen displays the contents of the file _exim.conf_. You can edit _exim.conf_ by using the Exim Configuration Manager.
 
 ## Authenticate by using SendGrid Credentials
 
-Locate the **Begin Authenticators** section and enter the following commands in the corresponding text box labeled **Section: AUTH**
+Locate the **Begin Authenticators** section and enter the following commands in the corresponding text box that in **Section: AUTH**
 
 `sendgrid_login:`
 
@@ -51,7 +51,7 @@ Locate the **Begin Authenticators** section and enter the following commands in 
 
 ## Configure the Routers
 
-Add the following commands to **Routers Configuration** in the section labeled **Section: PREROUTERS:**
+Add the following commands to **Routers Configuration** in **Section: PREROUTERS:**
 `send_via_sendgrid:`
 
 `driver = manualroute`
@@ -68,7 +68,7 @@ Add the following commands to **Routers Configuration** in the section labeled *
 
 ## Configure the Transports
 
-Add the following commands to **Transports Configuration** in the section labeled **Section: TRANSPORTSTART**
+Add the following commands to **Transports Configuration** in **Section: TRANSPORTSTART**
 
 `sendgrid_smtp:`
 
@@ -82,8 +82,8 @@ Add the following commands to **Transports Configuration** in the section labele
 
 Click the **Save** at the end of the page.
 
-<em>**Note:** To receive root/nobody/cpanel mail forwarded to external address the host name of the cPanel servers needs to be in /etc/localdomains file.</em>
+<em>**Note:** To receive `root/nobody/cpanel` mail that is forwarded to external address, the hostname of the cPanel servers must be in the `/etc/localdomains` file.</em>
 
 ## Next Steps
 
-The system runs a series of checks against the updated configuration file and restarts Exim. If you are logged in to any WebMail pages, log out and log back in after the restart is complete. Send a test email to ensure that the proper credits are used from the Email Delivery Service screen in the {{site.data.keyword.cloud}} console.
+The system runs a series of checks against the updated configuration file and restarts Exim. If you are logged in to any WebMail pages, log out and log back in after the restart completes. Send a test email to make sure that the proper credits are used from the email delivery service screen in the {{site.data.keyword.cloud}} console.
