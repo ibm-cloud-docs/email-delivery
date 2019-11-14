@@ -86,4 +86,4 @@ Click the **Save** at the end of the page.
 
 ## Next Steps
 
-The system runs a series of checks against the updated configuration file and restarts Exim. If you are logged in to any WebMail pages, log out and log back in after the restart is complete. Send a test email to ensure that the proper credits are used from the [Email Delivery Service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/services/emaildelivery){: new_window} screen in the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}.
+The system runs a series of checks against the updated configuration file and restarts Exim. If you are logged in to any WebMail pages, log out and log back in after the restart is complete. Send a test email to ensure that the proper credits are used.
