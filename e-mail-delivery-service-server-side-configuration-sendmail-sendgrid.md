@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2018-03-21"
+  years: 2014, 2020
+lastupdated: "2020-05-15"
 
 keywords: Email delivery server configuration, Sendmail, SendGrid
 
@@ -61,7 +61,7 @@ For Ubuntu and Debian, run this command:
 `define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl`
 
 ### Regenerate sendmail.cf
-The sendmail.mc file is a collection of macros that can be expanded into the real (and more complex) sendmail.cf config file. To make your changes accessible to Sendmail, regenerate sendmail.cf using the m4 command:
+The sendmail.mc file is a collection of macros that can be expanded into the real (and more complex) sendmail.cf config file. To make your changes accessible to Sendmail, regenerate sendmail.cf by using the m4 command:
 `m4 /etc/mail/sendmail.mc > /etc/mail/sendmail.cf`
 
 ## Restart the Sendmail
