@@ -20,7 +20,7 @@ subcollection: email-delivery
 {: #define-alt-port-smtp-whm}
 {: faq}
 
-1. Log into **WHM**.
+1. Log in to **WHM**.
 2. Click **Service Manager**.
 3. Set the port after **Run another copy of Exim on port**.
 4. Click **Save**.
