@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-08-01"
+  years: 2014, 2020
+lastupdated: "2020-05-15"
 
 keywords: getting started email delivery
 
@@ -15,6 +15,7 @@ subcollection: email-delivery
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:pre: .pre}
+{:note: .note}
 {:table: .aria-labeledby="caption"}
 
 # Getting started tutorial
@@ -33,7 +34,7 @@ Use this information to configure your server to use {{site.data.keyword.cloud}}
 **Notes**
 - Specific instructions for using the Advanced Editor are on the **Exim Configuration Editor** screen.
 - This procedure can cause Exim to fail.
-- The **Exim Configuration Editor** screen displays the contents of the file _exim.conf_. You can edit _exim.conf_ using the Exim Configuration Manager.
+- The **Exim Configuration Editor** screen displays the contents of the file _exim.conf_. You can edit _exim.conf_ by using the Exim Configuration Manager.
 
 ## Authenticate by using SendGrid Credentials
 
@@ -82,7 +83,8 @@ Add the following commands to **Transports Configuration** in the section labele
 
 Click the **Save** at the end of the page.
 
-<em>**Note:** To receive root/nobody/cpanel mail forwarded to external address the host name of the cPanel servers needs to be in /etc/localdomains file.</em>
+To receive root/nobody/cpanel mail forwarded to external address, the hostname of the cPanel servers needs to be in /etc/localdomains file.
+{: note}
 
 ## Next Steps
 
