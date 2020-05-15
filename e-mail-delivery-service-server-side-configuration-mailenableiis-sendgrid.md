@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2019
+  years: 2014, 2020
 lastupdated: "2019-08-21"
 
 keywords: Email delivery server configuration, IIS MailEnable, SendGrid
