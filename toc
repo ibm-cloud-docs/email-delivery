@@ -2,6 +2,7 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="email-delivery" audience="service" href="/docs/email-delivery?topic=email-delivery-getting-started-tutorial" path="email-delivery"}
+IBM Cloud Email Delivery
 
     {: .navgroup id="learn"}
     getting-started.md
