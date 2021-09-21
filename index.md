@@ -27,9 +27,9 @@ Use this information to configure your server to use {{site.data.keyword.cloud}}
 
 1.  Confirm that you can send emails from the device before you add or update smart host settings. Fix any existing problems in the send and receive process before you proceed.
 2. Follow these steps to access the Exim Configuration Editor:
-  * Access WHM with your unique credentials.
-  * Navigate to **Service Configuration > Exim Configuration Editor**.
-  * Click **Advanced Editor** to open the editor.
+   * Access WHM with your unique credentials.
+   * Navigate to **Service Configuration > Exim Configuration Editor**.
+   * Click **Advanced Editor** to open the editor.
 
 **Notes**
 - Specific instructions for using the Advanced Editor are on the **Exim Configuration Editor** screen.
