@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2020
+  years: 2014, 2021
 lastupdated: "2020-05-15"
 
 keywords: getting started email delivery
@@ -31,7 +31,7 @@ Use this information to configure your server to use {{site.data.keyword.cloud}}
    * Navigate to **Service Configuration > Exim Configuration Editor**.
    * Click **Advanced Editor** to open the editor.
 
-**Notes**
+### Notes
 - Specific instructions for using the Advanced Editor are on the **Exim Configuration Editor** screen.
 - This procedure can cause Exim to fail.
 - The **Exim Configuration Editor** screen displays the contents of the file _exim.conf_. You can edit _exim.conf_ by using the Exim Configuration Manager.
