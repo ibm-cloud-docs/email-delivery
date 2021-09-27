@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2019
+  years: 2014, 2021
 lastupdated: "2019-08-01"
 
 keywords: getting started email delivery
@@ -13,6 +13,7 @@ subcollection: email-delivery
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:note: .note}
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
@@ -26,11 +27,12 @@ Use this information to configure your server to use {{site.data.keyword.cloud}}
 
 1.  Confirm that you can send emails from the device before you add or update smart host settings. Fix any existing problems in the send and receive process before you proceed.
 2. Follow these steps to access the Exim Configuration Editor:
-  * Access WHM with your unique credentials.
-  * Go to **Service Configuration > Exim Configuration Editor**.
-  * Click **Advanced Editor** to open the editor.
+   * Access WHM with your unique credentials.
+   * Go to **Service Configuration > Exim Configuration Editor**.
+   * Click **Advanced Editor** to open the editor.
 
-**Notes**
+### Notes
+
 - Specific instructions for using the Advanced Editor are on the **Exim Configuration Editor** screen.
 - This procedure can cause Exim to fail.
 - The **Exim Configuration Editor** screen displays the contents of the file _exim.conf_. You can edit _exim.conf_ by using the Exim Configuration Manager.
@@ -68,7 +70,7 @@ Add the following commands to **Routers Configuration** in **Section: PREROUTERS
 
 ## Configure the Transports
 
-Add the following commands to **Transports Configuration** in **Section: TRANSPORTSTART**
+1. Add the following commands to **Transports Configuration** in **Section: TRANSPORTSTART**
 
 `sendgrid_smtp:`
 
@@ -80,9 +82,10 @@ Add the following commands to **Transports Configuration** in **Section: TRANSPO
 
 `hosts_require_tls = smtp.sendgrid.net`
 
-Click the **Save** at the end of the page.
+2. Click the **Save** at the end of the page.
 
-<em>**Note:** To receive `root/nobody/cpanel` mail that is forwarded to external address, the hostname of the cPanel servers must be in the `/etc/localdomains` file.</em>
+To receive `root/nobody/cpanel` mail that is forwarded to external address, the hostname of the cPanel servers must be in the `/etc/localdomains` file.
+{: note}
 
 ## Next Steps
 
