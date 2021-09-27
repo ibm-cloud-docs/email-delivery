@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="email-delivery" audience="service" href="/docs/email-delivery?topic=email-delivery-getting-started-tutorial" path="email-delivery"}
+{: .toc subcollection="email-delivery" version="2" audience="service" href="/docs/email-delivery?topic=email-delivery-getting-started-tutorial" path="email-delivery"}
 IBM Cloud Email Delivery
 
     {: .navgroup id="learn"}
