@@ -1,9 +1,9 @@
 ---
 toc:
   properties:
-    subcollection: email-deliver
+    subcollection: email-delivery
     version: 2
-    category: compute_classic
+    category: dev_ops
     audience: service 
     href: /docs/email-delivery
     console-page: "/classic"
