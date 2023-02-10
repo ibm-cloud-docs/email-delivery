@@ -67,11 +67,6 @@ The recipient might have filters set up that move emails into folders other than
 
 {{site.data.keyword.cloud}} now offers an email delivery service that is powered by {{site.data.keyword.SendGrid}} that allows clients to use a smart host to relay your outbound mail services. This service has many other functions such as generating metrics, tracking email lists, tracking email activity, assisting with newsletters, and authenticating.
 
-1. Log in to **WHM**.
-2. Click **Service Manager**.
-3. Set the port after **Run another copy of Exim on port**.
-4. Click **Save**.
-
 ## Why do I need to warm up an IP address?
 {: #why-warm-up-IP-address}
 {: faq}
