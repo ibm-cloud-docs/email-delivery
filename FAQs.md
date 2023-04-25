@@ -54,7 +54,7 @@ Your emails can be flagged as spam if you don't use authentication with RDNS, DM
 ## Why do emails take a long time to deliver?
 {: #why-emails-taking-long-deliver}
 
-Internet traffic congestion and SMTP server configuration issues can cause delivery delays. For more information, see [SendGrid - Troubleshooting Delays and Latency](https://docs.sendgrid.com/ui/account-and-settings/troubleshooting-delays-and-latency){external} or check with your email vendor.
+Internet traffic congestion and SMTP server configuration issues can cause delivery delays. For more information, see [SendGrid - Troubleshooting Delays and Latency](https://docs.sendgrid.com/ui/account-and-settings/troubleshooting-delays-and-latency){: external} or check with your email vendor.
 
 ## Why do recipients not see emails in the inbox, but I see that they show as delivered?
 {: #why-recipients-not-see-email-but-shows-delivered}
