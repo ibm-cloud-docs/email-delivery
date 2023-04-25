@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2021
+  years: 2014, 2023
 lastupdated: "2020-05-15"
 
 keywords: email delivery server configuration, centos, plesk, postfix
@@ -9,12 +9,8 @@ keywords: email delivery server configuration, centos, plesk, postfix
 subcollection: email-delivery
 
 ---
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Ordering email-delivery service
 {: #ordering-email-delivery-service}
@@ -35,4 +31,4 @@ For more information about permissions, see [Classic infrastructure permissions]
 1. From the **Services** menu, select **Email Delivery**.
 2. Select the SendGrid account type that is based on your expected usage rate.
 3. Provide the email and password information for the email address that the service applies to and click **Continue**.
-4. Verify the order, read any service agreements, and click **Place Order**.
+4. Verify the order, read any service agreements, and click **Place order**.
