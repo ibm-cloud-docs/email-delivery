@@ -10,13 +10,7 @@ subcollection: email-delivery
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:note: .note}
-{:table: .aria-labeledby="caption"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting started
 {: #getting-started-email-delivery}
@@ -28,6 +22,7 @@ Use this information to configure your server to use {{site.data.keyword.cloud}}
 
 1. Confirm that you can send emails from the device before you add or update smart host settings. Fix any existing problems in the send and receive process before you proceed.
 2. Follow these steps to access the Exim Configuration Editor:
+
    * Access WHM with your credentials.
    * Go to **Service Configuration > Exim Configuration Editor**.
    * Click **Advanced Editor** to open the editor.
@@ -58,6 +53,7 @@ Locate the **Begin Authenticators** section and enter the following commands in 
 {: #configuring-email-routers}
 
 Add the following commands to **Routers Configuration** in the section that is labeled **Section: PREROUTERS:**
+
    `send_via_sendgrid:`
 
    `driver = manualroute`
