@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2020
+  years: 2014, 2023
 lastupdated: "2018-03-21"
 
 keywords: define alternate port, email delivery
@@ -9,12 +9,8 @@ keywords: define alternate port, email delivery
 subcollection: email-delivery
 
 ---
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Define an alternate port for SMTP in WHM
 {: #define-alt-port-smtp-whm}
