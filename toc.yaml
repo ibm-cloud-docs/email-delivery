@@ -22,7 +22,7 @@ toc:
   - navgroup: 
       id: howto
       topics:
-      - /virtual-servers/virtual-servers-navigating-devices
+      - include: ../virtual-servers/virtual-servers-navigating-devices.md
       - e-mail-delivery-service-server-side-configuration-sendmail-sendgrid.md
       - e-mail-delivery-service-server-side-configuration-mailenableiis-sendgrid.md
       - e-mail-delivery-service-server-side-configuration-centos-plesk-postfix.md
