@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-02-09"
+  years: 2014, 2024
+lastupdated: "2024-04-16"
 
 keywords: email delivery faq
 
@@ -82,7 +82,7 @@ The proper volume and frequency of your email program depends on your total emai
 - Start by sending a welcome message to your hyper-engaged recipients. Then, send the message to your recently engaged recipients.
 - If you don't have engagement data, keep in mind that your recent signups are most active right after they sign up to your email list.
 
-For more information, see [SendGrid’s Email Guide for IP Warm Up](https://sendgrid.com/resource/email-guide-ip-warm-up/).
+For more information, see [SendGrid’s Email Guide for IP Warm Up](https://sendgrid.com/en-us/resource/email-guide-ip-warm-up).
 
 ## How do I get a dedicated IP address?
 {: #how-get-dedicated-ip-address}
@@ -122,6 +122,6 @@ For the Terms of Service for SendGrid and Twilio, see [Twilio Terms of Service](
 
 For more information about SendGrid, see the following links.
 
-- [SendGrid documentation](https://sendgrid.com/docs/)
+- [SendGrid documentation](https://docs.sendgrid.com/)
 - [SendGrid Email API documentation](https://www.twilio.com/sendgrid/email-api)
-- [SendGrid for developers](https://sendgrid.com/docs/for-developers/)
+- [SendGrid for developers](https://docs.sendgrid.com/for-developers)
