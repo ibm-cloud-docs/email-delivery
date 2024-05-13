@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2024
-lastupdated: "2024-04-16"
+lastupdated: "2024-05-13"
 
 keywords: email delivery faq
 
@@ -102,7 +102,7 @@ If you want to use a third-party email delivery product, you need to use a smart
 {: #how-use-own-email-server}
 {: faq}
 
-Contact [support](/docs/get-support?topic=get-support-using-avatar#getting-support) to open port 25 so you can host your own email server.
+Contact [support](/docs/get-support?topic=get-support-using-avatar#getting-support) to request an exemption to open port 25 so you can host your own email server.
 
 ## How do I get help from SendGrid?
 {: #how-get-help-sendgrid}
