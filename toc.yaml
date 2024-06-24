@@ -10,15 +10,12 @@ toc:
     product-page: "https://www.ibm.com/products"
     path: email-delivery
     label: IBM Cloud Email Delivery for Classic
-
   entries: 
-
   - navgroup: 
       id: learn
       topics:
        - index.md
        - about.md
-          
   - navgroup: 
       id: howto
       topics:
@@ -26,10 +23,7 @@ toc:
       - e-mail-delivery-service-server-side-configuration-sendmail-sendgrid.md
       - e-mail-delivery-service-server-side-configuration-mailenableiis-sendgrid.md
       - e-mail-delivery-service-server-side-configuration-centos-plesk-postfix.md
-
   - navgroup:
       id: help
       topics: 
       - FAQs.md
-      
-

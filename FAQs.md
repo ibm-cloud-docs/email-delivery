@@ -82,7 +82,7 @@ The proper volume and frequency of your email program depends on your total emai
 - Start by sending a welcome message to your hyper-engaged recipients. Then, send the message to your recently engaged recipients.
 - If you don't have engagement data, keep in mind that your recent signups are most active right after they sign up to your email list.
 
-For more information, see [SendGrid’s Email Guide for IP Warm Up](https://sendgrid.com/en-us/resource/email-guide-ip-warm-up).
+For more information, see [SendGrid’s Email Guide for IP Warm Up](https://docs.sendgrid.com/for-developers).
 
 ## How do I get a dedicated IP address?
 {: #how-get-dedicated-ip-address}

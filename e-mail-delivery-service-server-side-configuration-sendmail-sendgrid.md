@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2023-04-27"
+lastupdated: "2023-02-09"
 
 keywords: Email delivery server configuration, Sendmail, SendGrid
 
