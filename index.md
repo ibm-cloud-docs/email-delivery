@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-02-10"
+  years: 2014, 2024
+lastupdated: "2024-07-15"
 
 keywords: getting started email delivery
 
@@ -16,12 +16,13 @@ subcollection: email-delivery
 {: #getting-started-email-delivery}
 
 Use this information to configure your server to use {{site.data.keyword.cloud}} email service.
+{: shortdesc}
 
 ## Preparing for email delivery
 {: #preparing-for-email-delivery}
 
 1. Confirm that you can send emails from the device before you add or update smart host settings. Fix any existing problems in the send and receive process before you proceed.
-2. Follow these steps to access the Exim Configuration Editor:
+1. Follow these steps to access the Exim Configuration Editor:
 
    * Access WHM with your credentials.
    * Go to **Service Configuration > Exim Configuration Editor**.
@@ -83,9 +84,9 @@ Add the following commands to **Routers Configuration** in the section that is l
 
    `hosts_require_tls = smtp.sendgrid.net`
 
-2. Click the **Save** at the end of the page.
+1. Click the **Save** at the end of the page.
 
-To receive `root/nobody/cpanel` mail that is forwarded to external address, the hostname of the cPanel servers needs to be in the `/etc/localdomains` file.
+To receive `root/nobody/cpanel` mail that is forwarded to an external address, the hostname of the cPanel servers needs to be in the `/etc/localdomains` file.
 {: note}
 
 ## Next steps
