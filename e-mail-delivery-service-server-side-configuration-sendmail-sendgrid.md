@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-02-09"
+  years: 2014, 2024
+lastupdated: "2024-07-15"
 
 keywords: Email delivery server configuration, Sendmail, SendGrid
 
@@ -46,21 +46,21 @@ For Ubuntu and Debian, run the following command:
 
    `AuthInfo:smtp.sendgrid.net "U:YOUR_SENDGRID_USER" "P:YOUR_SENDGRID_PASSWORD" "M:PLAIN"`
 
-2. Run the following command to generate the /etc/mail/access.db database map:
+1. Run the following command to generate the /etc/mail/access.db database map:
 
    `makemap hash /etc/mail/access.db < /etc/mail/access`
 
-3. Edit the /etc/mail/sendmail.mc file to use {{site.data.keyword.SendGrid}} as our smart host.
+1. Edit the /etc/mail/sendmail.mc file to use {{site.data.keyword.SendGrid}} as our smart host.
 
 ### Configuring sendmail.mc in RHEL and CentOS
 {: #configure-sendmail-rhel-centos}
 
 1. Locate and open the _sendmail.mc_ file.
-2. Comment out the following line.
+1. Comment out the following line.
 
    `dnl define('SMART_HOST', 'smtp.your.provider')dnl`
 
-3. Add new lines with the following code.
+1. Add new lines with the following code.
 
    `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
    `FEATURE('access_db')dnl`
@@ -71,7 +71,7 @@ For Ubuntu and Debian, run the following command:
 {: #configure-sendmailmc-ubuntu-debian}
 
 1. Locate and open the sendmail.mc file.
-2. At the end of the file, insert the following code before the line that reads 'MAILER_DEFINITIONS'
+1. At the end of the file, insert the following code before the line that reads 'MAILER_DEFINITIONS'
 
    `define('SMART_HOST', 'smtp.sendgrid.net')dnl`
    `FEATURE('access_db')dnl`
