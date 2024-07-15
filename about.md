@@ -1,20 +1,16 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2022-02-17"
+  years: 2014, 2024
+lastupdated: "2024-07-15"
 
 keywords: about email delivery
 
 subcollection: email-delivery
 
 ---
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:table: .aria-labeledby="caption"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # About email delivery
 {: #about-email-delivery}

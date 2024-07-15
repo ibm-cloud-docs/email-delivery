@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2020-05-15"
+  years: 2014, 2024
+lastupdated: "2024-07-15"
 
 keywords: email delivery server configuration, centos, plesk, postfix
 
@@ -24,7 +24,7 @@ The following example is a standard {{site.data.keyword.cloud}} OS Reload of Cen
 {: #email-delivery-config}
 
 1. Locate your Postfix configuration file. A common location is `/etc/postfix/main.cf`.
-2. Open main.cf file with a text editor and add the following to the configuration.
+1. Open the main.cf file with a text editor and add the following to the configuration.
 
    `smtp_sasl_auth_enable = yes`
 
@@ -38,8 +38,8 @@ The following example is a standard {{site.data.keyword.cloud}} OS Reload of Cen
 
    `relayhost = [smtp.sendgrid.net]:587`
 
-3. Save and close the /etc/postfix/main.cf file.
-4. Restart Postfix by using this command:
+1. Save and close the /etc/postfix/main.cf file.
+1. Restart Postfix by using this command:
 
    `/etc/init.d/postfix restart`
 
@@ -56,6 +56,6 @@ The following example is a standard {{site.data.keyword.cloud}} OS Reload of Cen
 
     `/etc/init.d/postfix restart`
 
-2. If port 587 does not work, use port 2525 in the Postfix configuration. You might also need to open the configuration file `/etc/postfix/main.cf` and uncomment the following line:
+1. If port 587 does not work, use port 2525 in the Postfix configuration. You might also need to open the configuration file `/etc/postfix/main.cf` and uncomment the following line:
 
    `#tlsmgr unix - - n 1000? 1 tlsmgr`

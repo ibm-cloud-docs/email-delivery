@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2024
-lastupdated: "2024-05-13"
+lastupdated: "2024-07-15"
 
 keywords: email delivery faq
 
@@ -54,7 +54,7 @@ Your emails can be flagged as spam if you don't use authentication with RDNS, DM
 ## Why do emails take a long time to deliver?
 {: #why-emails-taking-long-deliver}
 
-Internet traffic congestion and SMTP server configuration issues can cause delivery delays. For more information, see [SendGrid - Troubleshooting Delays and Latency](https://docs.sendgrid.com/ui/account-and-settings/troubleshooting-delays-and-latency){: external} or check with your email vendor.
+Internet traffic congestion and SMTP server configuration issues can cause delivery delays. Contact your email vendor.
 
 ## Why do recipients not see emails in the inbox, but I see that they show as delivered?
 {: #why-recipients-not-see-email-but-shows-delivered}
@@ -82,8 +82,11 @@ The proper volume and frequency of your email program depends on your total emai
 - Start by sending a welcome message to your hyper-engaged recipients. Then, send the message to your recently engaged recipients.
 - If you don't have engagement data, keep in mind that your recent signups are most active right after they sign up to your email list.
 
+<<<<<<< Updated upstream
 For more information, see [SendGrid’s Email Guide for IP Warm Up](https://docs.sendgrid.com/for-developers).
 
+=======
+>>>>>>> Stashed changes
 ## How do I get a dedicated IP address?
 {: #how-get-dedicated-ip-address}
 {: faq}
@@ -122,6 +125,11 @@ For the Terms of Service for SendGrid and Twilio, see [Twilio Terms of Service](
 
 For more information about SendGrid, see the following links.
 
+<<<<<<< Updated upstream
 - [SendGrid documentation](https://docs.sendgrid.com/)
 - [SendGrid Email API documentation](https://www.twilio.com/sendgrid/email-api)
 - [SendGrid for developers](https://docs.sendgrid.com/for-developers)
+=======
+- [SendGrid documentation](https://www.twilio.com/docs/sendgrid)
+- [SendGrid Email API documentation](https://www.twilio.com/sendgrid/email-api)
+>>>>>>> Stashed changes
