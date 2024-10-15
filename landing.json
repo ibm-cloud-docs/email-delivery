@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "title": "IBM Cloud Email Delivery for Classic",
+  "introduction": "SendGrid, IBM Cloud® email delivery service for Classic infrastructure, is a mail relay service. With this service, you can use a smart host to relay your outbound mail services.",
+  "product_page": "https://www.ibm.com/products/virtual-servers-classic",
+  "console_page": "/classic",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started",
+        "href": "/docs/email-delivery?topic=email-delivery-getting-started-email-delivery"
+      },
+      {
+        "title": "Configuring server-side email delivery service for Sendmail and SendGrid",
+        "href": "/docs/email-delivery?topic=email-delivery-Email-delivery-server-configuration-Sendmail-SendGrid"
+      },
+      {
+        "title": "Configuring server-side email delivery service for IIS MailEnable and SendGrid",
+        "href": "/docs/email-delivery?topic=email-delivery-Email-delivery-server-configuration-IISMailEnable-SendGrid"
+      },
+      {
+        "title": "Configuring server-side email delivery service for CentOS, Plesk, and Postfix",
+        "href": "/docs/email-delivery?topic=email-delivery-email-delivery-server-config"
+      },
+      {
+        "title": "FAQs",
+        "href": "/docs/email-delivery?topic=email-delivery-email-delivery-faq"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "IBM Cloud Virtual Servers on IBM Cloud Classic Infrastructure",
+      "description": "IBM Cloud Virtual Servers are public and dedicated virtual servers that provision and scale on demand, with monthly and hourly billing options.",
+      "href": "https://www.ibm.com/products/virtual-servers-classic",
+      "type": "blog"
+    },
+    {
+      "title": "IBM Cloud Bare Metal Servers on VPC Infrastructure",
+      "description": "Discover the deployment options associated with IBM Cloud Bare Metal Servers.",
+      "href": "https://www.ibm.com/products/bare-metal-servers/vpc",
+      "type": "blog"
+    }
+  ],
+ "section_devtools": {
+    "api": "https://sldn.softlayer.com/reference/softlayerapi/",
+    "cli": "/docs/cli?topic=cli-cli-virtual-servers",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/compute_vm_instance"
+  }
+  }
