@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2024
-lastupdated: "2024-07-15"
+  years: 2014, 2025
+lastupdated: "2025-10-06"
 
 keywords: getting started email delivery
 
@@ -31,7 +31,7 @@ Use this information to configure your server to use {{site.data.keyword.cloud}}
 ### Notes
 {: #email-delivery-preparing-notes}
 
-* Specific instructions for using the Advanced Editor are on the **Exim Configuration Editor** screen.
+* Specific instructions about using the Advanced Editor are on the **Exim configuration editor** screen.
 * This procedure can cause Exim to fail.
 * The **Exim Configuration Editor** screen displays the contents of the file _exim.conf_. You can edit _exim.conf_ by using the Exim Configuration Manager.
 
