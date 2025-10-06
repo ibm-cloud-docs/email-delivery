@@ -1,22 +1,21 @@
----
 toc:
   properties:
     subcollection: email-delivery
     version: 2
     category: dev_ops
-    audience: service 
+    audience: service
     href: /docs/email-delivery
-    console-page: "/classic"
-    product-page: "https://www.ibm.com/products/virtual-servers-classic"
+    console-page: /classic
+    product-page: https://www.ibm.com/products/virtual-servers-classic
     path: email-delivery
     label: IBM Cloud Email Delivery for Classic
-  entries: 
-  - navgroup: 
+  entries:
+  - navgroup:
       id: learn
       topics:
-       - index.md
-       - about.md
-  - navgroup: 
+      - index.md
+      - about.md
+  - navgroup:
       id: howto
       topics:
       - e-mail-delivery-service-server-side-configuration-sendmail-sendgrid.md
@@ -24,5 +23,5 @@ toc:
       - e-mail-delivery-service-server-side-configuration-centos-plesk-postfix.md
   - navgroup:
       id: help
-      topics: 
+      topics:
       - FAQs.md
