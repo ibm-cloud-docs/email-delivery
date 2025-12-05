@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2024
-lastupdated: "2024-07-17"
+  years: 2014, 2025
+lastupdated: "2025-12-05"
 
 keywords: email delivery faq
 
@@ -12,9 +12,11 @@ subcollection: email-delivery
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs
+# FAQ for IBM Cloud Email Delivery for Classic
 {: #email-delivery-faq}
 {: faq}
+
+Frequently asked questions for {{site.data.keyword.cloud}} Email Delivery for Classic might include questions about delivery options or information about SendGrid. To find all of the FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs). {: shortdesc}
 
 ## Can I use outbound email on port 25?
 {: #can-i-use-port25}
@@ -32,7 +34,7 @@ By default, the standard SMTP TCP port 25 is blocked due to the large amount of 
 {: #what-options-send-email}
 {: faq}
 
-If you need send email from your servers, you need to use a smart host outside of {{site.data.keyword.cloud}}. A smart host is a host that relays SMTP traffic from an SMTP server, mail client, or any other service or programming language capable of handling SMTP. Servers typically send this type of traffic by using the mail submission TCP ports 465 or 587. You can communicate with 465, 587, or any custom port other than TCP port 25. If you want to use your own email server on a custom port, use the documentation specific to your email service to configure a custom email port.
+If you need to send email from your servers, you need to use a smart host outside of {{site.data.keyword.cloud}}. A smart host is a host that relays SMTP traffic from an SMTP server, mail client, or any other service or programming language capable of handling SMTP. Servers typically send this type of traffic by using the mail submission TCP ports 465 or 587. You can communicate with 465, 587, or any custom port other than TCP port 25. If you want to use your own email server on a custom port, use the documentation specific to your email service to configure a custom email port.
 
 ## Why are my emails flagged as spam?
 {: #why-emails-flagged-as-spam}
@@ -48,7 +50,7 @@ Your emails can be flagged as spam if you don't use authentication with RDNS, DM
 ## Why are my emails not being delivered?
 {: #why-email-not-being-delivered}
 
-- Your email size might be higher than threshold restrictions. Failure notices often give more details about size restrictions.
+- Your email size might be higher than the threshold restrictions. Failure notices often give more details about size restrictions.
 - The recipient server might block your emails because of compliance and regulation reasons. For more information, see [Why are my emails flagged as spam?](#why-emails-flagged-as-spam).
 
 ## Why do emails take a long time to deliver?
@@ -59,7 +61,7 @@ Internet traffic congestion and SMTP server configuration issues can cause deliv
 ## Why do recipients not see emails in the inbox, but I see that they show as delivered?
 {: #why-recipients-not-see-email-but-shows-delivered}
 
-The recipient might have filters set up that move emails into folders other than the inbox. For more information, see [SendGrid - Troubleshooting Email Messages Marked "Delivered", But Not Appearing in Inbox](https://support.sendgrid.com/hc/en-us/articles/4408443310619-Troubleshooting-Email-Messages-Marked-Delivered-But-Not-Appearing-in-Inbox){: external}.
+The recipient might have filters set up that move emails into folders other than the inbox. For more information, see [SendGrid - Troubleshooting email messages marked "Delivered", But not appearing in inbox](https://support.sendgrid.com/hc/en-us/articles/4408443310619-Troubleshooting-Email-Messages-Marked-Delivered-But-Not-Appearing-in-Inbox){: external}.
 
 ## Does {{site.data.keyword.cloud}} offer a smart host service?
 {: #offer-smart-host-service}
@@ -102,19 +104,19 @@ If you want to use a third-party email delivery product, you need to use a smart
 {: #how-use-own-email-server}
 {: faq}
 
-Contact [support](/docs/get-support?topic=get-support-using-avatar#getting-support) to request an exemption to open port 25 so you can host your own email server.
+Contact [support](/docs/account?topic=account-using-avatar) to request an exemption to open port 25 so you can host your own email server.
 
 ## How do I get help from SendGrid?
 {: #how-get-help-sendgrid}
 {: faq}
 
-Log in to your [SendGrid account](https://support.sendgrid.com/hc/en-us) and submit a support request.
+Log in to your [SendGrid account](https://support.sendgrid.com/hc/en-us) and submit a support request. If you can't log in, see [How to Contact SendGrid support if you cannot log in to your account](https://support.sendgrid.com/hc/en-us/articles/38768657868187-How-to-Contact-SendGrid-support-if-you-cannot-log-in-to-your-account){: external}.
 
 ## Where can I find the Terms of Service for SendGrid and Twilio?
 {: #where-sendgrid-tos}
 {: faq}
 
-For the Terms of Service for SendGrid and Twilio, see [Twilio Terms of Service](https://www.twilio.com/legal/tos).
+For the Terms of Service for SendGrid and Twilio, see [Twilio Terms of Service](https://www.twilio.com/legal/tos){: external}.
 
 ## Where can I find more information about SendGrid?
 {: #where-more-information-sendgrid}
