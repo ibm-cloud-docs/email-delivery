@@ -5,8 +5,8 @@ toc:
     category: dev_ops
     audience: service
     href: /docs/email-delivery
-    console-page: /classic
-    product-page: https://www.ibm.com/products/virtual-servers-classic
+    console-page: "/classic"
+    product-page: "https://www.ibm.com/products/virtual-servers-classic"
     path: email-delivery
     label: IBM Cloud Email Delivery for Classic
   entries:
