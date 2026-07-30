@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2026
-lastupdated: "2026-07-29"
+lastupdated: "2026-07-30"
 
 keywords: getting started email delivery
 
@@ -15,7 +15,7 @@ subcollection: email-delivery
 # Getting started
 {: #getting-started-email-delivery}
 
-Use the following information to configure your server to use SendGrid, an {{site.data.keyword.cloud}} email delivery service.
+Use the following information to configure your server to use the {{site.data.keyword.cloud}} email delivery service.
 {: shortdesc}
 
 ## Email delivery options
@@ -26,7 +26,7 @@ You have two options when you need to send outbound transactional email.
 * IBM Cloud Email Delivery for Classic - creates a connection to a SendGrid account.
 * IBM Cloud Event Notifications - an IBM Cloud service that is hosted, operated, and supported by IBM.
 
-Both options offer similar transactional email capabilities such as 1-to-1 or 1-to-many sending and API and SMTP interfaces.
+Both options offer similar transactional email capabilities.
 
 Email Delivery for Classic is best if you have the following needs.
 
