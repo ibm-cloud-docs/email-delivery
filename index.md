@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2026
-lastupdated: "2026-07-30"
+lastupdated: "2026-08-19"
 
 keywords: getting started email delivery
 
@@ -42,7 +42,7 @@ Event Notifications is best if you have the following needs:
 * To securely connect to the email service by using virtual private endpoints.
 * A single multi-channel integration that extends beyond email to SMS, push notifications, webhooks, and other event-driven notification channels.
 
-For current IBM Cloud customers, [IBM Cloud Event Notifications email](https://cloud.ibm.com/docs/event-notifications?topic=event-notifications-en-destinations-email) is the preferred choice for transactional enterprise needs.
+For current IBM Cloud customers, [IBM Cloud Event Notifications email](/docs/event-notifications?topic=event-notifications-en-destinations-email) is the preferred choice for transactional enterprise needs.
 {: tip}
 
 ## Preparing for email delivery
