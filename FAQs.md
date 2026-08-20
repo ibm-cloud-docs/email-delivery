@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2025
-lastupdated: "2025-12-05"
+  years: 2014, 2026
+lastupdated: "2026-08-19"
 
 keywords: email delivery faq
 
@@ -104,13 +104,13 @@ If you want to use a third-party email delivery product, you need to use a smart
 {: #how-use-own-email-server}
 {: faq}
 
-Contact [support](/docs/account?topic=account-using-avatar) to request an exemption to open port 25 so you can host your own email server.
+Contact [support](/docs/support?topic=support-open-case) to request an exemption to open port 25 so you can host your own email server.
 
 ## How do I get help from SendGrid?
 {: #how-get-help-sendgrid}
 {: faq}
 
-Log in to your [SendGrid account](https://support.sendgrid.com/hc/en-us) and submit a support request. If you can't log in, see [How to Contact SendGrid support if you cannot log in to your account](https://support.sendgrid.com/hc/en-us/articles/38768657868187-How-to-Contact-SendGrid-support-if-you-cannot-log-in-to-your-account){: external}.
+Log in to your SendGrid account and submit a support request. If you can't log in, see [How to Contact SendGrid support if you cannot log in to your account](https://support.sendgrid.com/hc/en-us/articles/38768657868187-How-to-Contact-SendGrid-Support-if-You-Cannot-Log-In-to-Your-Account){: external}.
 
 ## Where can I find the Terms of Service for SendGrid and Twilio?
 {: #where-sendgrid-tos}
